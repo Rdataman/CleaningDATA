@@ -26,7 +26,7 @@ run_analysis <-function(){
   ##Step 3: Uses descriptive activity names to name the activities in the data set
   ## "()" and "-" are removed from the colume names.
   colName0<-gsub("\\()","",as.character(features$V2[colNo]))
-  colName0<-gsub("-","\\.",colName0)
+  colName0<-gsub("-","",colName0)
   colnames(data)<-c(colName0,"Subject","Activity")
   
   ##Step 4: Appropriately labels the data set with descriptive activity names. 
